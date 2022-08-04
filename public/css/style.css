@@ -1,0 +1,363 @@
+.navbar .nav-link {
+    color: #ff9900;
+}
+
+.link-detail {
+    color: #0066ff;
+}
+
+.link-detail:hover {
+    color: #0045ad;
+}
+
+.navbar .dropdown-item {
+    color: #ff9900;
+}
+.jumbotron {
+    background-size: cover;
+    background-attachment: static;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text-overlay {
+    padding-top: 16rem;
+}
+
+.text-overlay h1 {
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.bg-footer {
+    background-color: black;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #ff8800;
+    color: #000000;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+#myBtn:hover {
+    background-color: #da7400;
+}
+
+.arrow {
+    border: solid #000000;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.p-family {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    font-size: 23px;
+}
+
+.jumbotron .judul-jumbotron {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.jumbotron .sub-judul {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-pills .nav-link.active {
+    background-color: black;
+}
+.dropdown-menu .dropdown-item.active {
+    background-color: black;
+    color: white;
+}
+
+#judul {
+    /* font-size: 32px; */
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700px;
+    position: relative;
+    padding-bottom: 5px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#judul::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#judul::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #07187a;
+    bottom: 0;
+    left: calc(50% - 20px);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.kartu-hasil {
+    position: relative;
+}
+
+.kartu-hasil:hover .card-img-overlay {
+    opacity: 0.9;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.card-img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.kartu-hasil:hover .card-img-overlay {
+    opacity: 0.9;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.card-img-overlay h5 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card-img-overlay span {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#social .button {
+    background-color: #e072ce;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#social .button:hover {
+    background-color: #d16ac0;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#social .button2 {
+    background-color: #13b7e9;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#social .button2:hover {
+    background-color: #12a3cf;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#social .button3 {
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#social .button3:hover {
+    background-color: #c90000;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#social .button4 {
+    background-color: #0dd628;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#social .button4:hover {
+    background-color: #0cc024;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#social .button5 {
+    background-color: #e71c1c;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#social .button5:hover {
+    background-color: #c41c1c;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#price .garis-bawah {
+    size: 10px;
+    color: black;
+}
+#ddn .garis-bawah {
+    size: 10px;
+    color: black;
+}
+
+.procedure-list li {
+    padding-bottom: 1rem;
+}
+
+.kartu-kontak {
+    transition: transform 0.2s ease;
+    background-color: #202020;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 10%;
+    border: 0;
+    color: white;
+}
+.kartu-kontak:hover {
+    transform: scale(1.1);
+    background-color: #3b3b3b;
+    color: white;
+}
+
+.btn.btn-kembali {
+    color: white;
+    background-color: #004cff;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 20px;
+}
+.btn.btn-kembali:hover {
+    color: white;
+    background-color: #003ac2;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 20px;
+}

@@ -1,34 +1,39 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\Image;
 use App\Models\Fanart;
 use App\Models\Payment;
 
 use Illuminate\Http\Request;
+use App\Models\Skillsart;
+use App\Models\Skillsprogrammer;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return view("Home/home", [
+        return view("Home.home", [
             "title" => "My Portfolio",
             "gambars" => Image::all(),
-            "fanarts" =>Fanart::all(),
+            "fanarts" => Fanart::all(),
+            "skillsarts" => Skillsart::all(),
+            "skillprogrammers" => Skillsprogrammer::all()
         ]);
     }
     public function commission()
     {
-        return view("Commission/Home/commission", [
+        return view("Commission.Home.commission", [
             "title" => "Open Commission",
             "gambars" => Image::all(),
-            "fanarts" =>Fanart::all(),
+            "fanarts" => Fanart::all(),
             "payments" => Payment::all()
         ]);
     }
     public function detailhasil($id)
     {
-        return view("Home/detail", [
+        return view("Home.detail", [
             "title" => "Detail",
             "rincian" => Image::find($id),
         ]);

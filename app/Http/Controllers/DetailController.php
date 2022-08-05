@@ -9,7 +9,7 @@ class DetailController extends Controller
 {
     public function detailhasil2($id)
     {
-        return view("Commission/Home/detail", [
+        return view("Commission.Home.detail", [
             "title" => "Detail",
             "rincian" => Image::find($id),
         ]);

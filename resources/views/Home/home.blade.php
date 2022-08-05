@@ -53,16 +53,25 @@
                     <h1>Skills</h1>
                 </div>
             </article>
+            <h3 class="mt-3">Art Skills</h3>
             <div class="row justify-content-center text-center row-cols-1 row-cols-md-4 mb-3 g-4">
+                @foreach ($skillarts as $skillart)
                 <div class="col">
                     <div class="card border-0">
-                        <div class="card-body">
-                            <p class="p-family">Nyahoo🐾🐾... I'm Zion the cat man. I am an artist, programmer and
-                                content
-                                creator. I just graduated from vocational high school.</p>
-                        </div>
+                        <img src="/img/art/{{ $skillart->gambar }}" class="card-img-top" alt="">
                     </div>
                 </div>
+                @endforeach
+            </div>
+            <h3>Programming Skills</h3>
+            <div class="row justify-content-center text-center row-cols-1 row-cols-md-4 mb-3 g-4">
+                @foreach ($skillprogrammers as $skillprogrammer)
+                <div class="col">
+                    <div class="card border-0">
+                        <img src="/img/art/{{ $skillprogrammer->gambar }}" class="card-img-top" alt="">
+                    </div>
+                </div>
+                @endforeach
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

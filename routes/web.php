@@ -15,7 +15,7 @@ use App\Http\Controllers\DetailController;
 |
 */
 
-Route::get('/home', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index']);
 Route::get('/commission', [HomeController::class, 'commission']);
 Route::get('/commission/detail/{id}', [DetailController::class, 'detailhasil2']);
 Route::get('/detail/{id}', [HomeController::class, 'detailhasil']);

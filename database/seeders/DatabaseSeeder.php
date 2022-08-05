@@ -6,6 +6,8 @@ use Illuminate\Database\Seeder;
 use App\Models\Fanart;
 use App\Models\Image;
 use App\Models\Payment;
+use App\Models\Skillsart;
+use App\Models\Skillsprogrammer;
 
 class DatabaseSeeder extends Seeder
 {
@@ -77,6 +79,39 @@ class DatabaseSeeder extends Seeder
         ]);
         Payment::create([
             "gambar" => "trakteer.png"
+        ]);
+        Skillsart::create([
+            "gambar" => "photoshop.png"
+        ]);
+        Skillsart::create([
+            "gambar" => "sai.png"
+        ]);
+        Skillsart::create([
+            "gambar" => "coreldraw.png"
+        ]);
+        Skillsprogrammer::create([
+            "gambar" => "larvel.png"
+        ]);
+        Skillsprogrammer::create([
+            "gambar" => "codeigniter.png"
+        ]);
+        Skillsprogrammer::create([
+            "gambar" => "git.png"
+        ]);
+        Skillsprogrammer::create([
+            "gambar" => "css.png"
+        ]);
+        Skillsprogrammer::create([
+            "gambar" => "bootstrap.png"
+        ]);
+        Skillsprogrammer::create([
+            "gambar" => "php.png"
+        ]);
+        Skillsprogrammer::create([
+            "gambar" => "js.png"
+        ]);
+        Skillsprogrammer::create([
+            "gambar" => "html5.png"
         ]);
     }
 }

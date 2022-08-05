@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Fanarts extends Migration
+class CreateSkillsprogrammersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class Fanarts extends Migration
      */
     public function up()
     {
-        Schema::create('fanarts', function (Blueprint $table) {
+        Schema::create('skillsprogrammers', function (Blueprint $table) {
             $table->id();
             $table->string('gambar');
             $table->timestamps();
@@ -27,6 +27,6 @@ class Fanarts extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('fanarts');
+        Schema::dropIfExists('skillsprogrammers');
     }
 }

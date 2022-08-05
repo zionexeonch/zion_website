@@ -20,7 +20,7 @@
                             <h5 class="card-text">Projek : {{ $rincian->apk }}</h5>
                             <span class="fs-5 card-text">Link : <a href="{{ $rincian->link }}"
                                     class="nav-link fw-bold link-detail ">{{ $rincian->link }}</a></span>
-                            <a href="/home/#portfolio" class="btn btn-kembali text-decoration-none mt-3">
+                            <a href="/#portfolio" class="btn btn-kembali text-decoration-none mt-3">
                                 <- Kembali</a>
                         </div>
                     </div>

@@ -6,6 +6,8 @@ use Illuminate\Database\Seeder;
 use App\Models\Fanart;
 use App\Models\Image;
 use App\Models\Payment;
+use App\Models\Skillart;
+use App\Models\Skillcoding;
 use App\Models\Skillsart;
 use App\Models\Skillsprogrammer;
 
@@ -80,38 +82,35 @@ class DatabaseSeeder extends Seeder
         Payment::create([
             "gambar" => "trakteer.png"
         ]);
-        Skillsart::create([
+        Skillart::create([
             "gambar" => "photoshop.png"
         ]);
-        Skillsart::create([
+        Skillart::create([
             "gambar" => "sai.png"
         ]);
-        Skillsart::create([
-            "gambar" => "coreldraw.png"
+        Skillcoding::create([
+            "gambar" => "html5.png"
         ]);
-        Skillsprogrammer::create([
-            "gambar" => "larvel.png"
-        ]);
-        Skillsprogrammer::create([
-            "gambar" => "codeigniter.png"
-        ]);
-        Skillsprogrammer::create([
-            "gambar" => "git.png"
-        ]);
-        Skillsprogrammer::create([
-            "gambar" => "css.png"
-        ]);
-        Skillsprogrammer::create([
-            "gambar" => "bootstrap.png"
-        ]);
-        Skillsprogrammer::create([
+        Skillcoding::create([
             "gambar" => "php.png"
         ]);
-        Skillsprogrammer::create([
+        Skillcoding::create([
             "gambar" => "js.png"
         ]);
-        Skillsprogrammer::create([
-            "gambar" => "html5.png"
+        Skillcoding::create([
+            "gambar" => "css.png"
+        ]);
+        Skillcoding::create([
+            "gambar" => "git.png"
+        ]);
+        Skillcoding::create([
+            "gambar" => "laravel.png"
+        ]);
+        Skillcoding::create([
+            "gambar" => "codeigniter.png"
+        ]);
+        Skillcoding::create([
+            "gambar" => "bootstrap.png"
         ]);
     }
 }

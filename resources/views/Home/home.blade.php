@@ -49,30 +49,30 @@
                 </div>
             </div>
             <article>
-                <div id="judul">
+                <div id="judul" class="mb-3">
                     <h1>Skills</h1>
                 </div>
             </article>
-            <h3 class="mt-3">Art Skills</h3>
-            <div class="row justify-content-center text-center row-cols-1 row-cols-md-4 mb-3 g-4">
-                @foreach ($skillarts as $skillart)
-                <div class="col">
-                    <div class="card border-0">
-                        <img src="/img/art/{{ $skillart->gambar }}" class="card-img-top" alt="">
+            <span class="mt-3 fs-2 fw-bold">Art Skills</h3>
+                <div class="row justify-content-center align-items-center text-center row-cols-1 row-cols-md-4 g-4">
+                    @foreach($skillarts as $skillart)
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="/img/art/{{ $skillart->gambar }}" class="card-img-top" alt="">
+                        </div>
                     </div>
+                    @endforeach
                 </div>
-                @endforeach
-            </div>
-            <h3>Programming Skills</h3>
-            <div class="row justify-content-center text-center row-cols-1 row-cols-md-4 mb-3 g-4">
-                @foreach ($skillprogrammers as $skillprogrammer)
-                <div class="col">
-                    <div class="card border-0">
-                        <img src="/img/art/{{ $skillprogrammer->gambar }}" class="card-img-top" alt="">
+                <span class="mb-3 fw-bold fs-2">Programming Skills</span>
+                <div class="row justify-content-center align-items-center text-center row-cols-1 row-cols-md-4 g-4">
+                    @foreach ($skillcodings as $skillcoding)
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="/img/code/{{ $skillcoding->gambar }}" class="card-img-top" alt="">
+                        </div>
                     </div>
+                    @endforeach
                 </div>
-                @endforeach
-            </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#000" fill-opacity="1"

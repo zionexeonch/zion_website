@@ -1,6 +1,6 @@
 <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: black">
     <div class="container">
-        <a class="navbar-brand text-uppercase fw-bold" href="/home">Zion Exeon Ch</a>
+        <a class="navbar-brand text-uppercase fw-bold" href="/">Zion Exeon Ch</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

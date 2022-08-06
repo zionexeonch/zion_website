@@ -230,7 +230,7 @@
         <div class="container">
             <article class="mb-4">
                 <div id="judul" class="text-white">
-                    <h1>Contact</h1>
+                    <h1>Contact & Orders</h1>
                 </div>
             </article>
             <div class="row justify-content-center row-cols-1 row-cols-md-3 g-4">

@@ -5,10 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Image;
 use App\Models\Fanart;
 use App\Models\Payment;
-
+use App\Models\Skillart;
+use App\Models\Skillcoding;
 use Illuminate\Http\Request;
-use App\Models\Skillsart;
-use App\Models\Skillsprogrammer;
 
 class HomeController extends Controller
 {
@@ -18,8 +17,8 @@ class HomeController extends Controller
             "title" => "My Portfolio",
             "gambars" => Image::all(),
             "fanarts" => Fanart::all(),
-            "skillsarts" => Skillsart::all(),
-            "skillprogrammers" => Skillsprogrammer::all()
+            "skillarts" => Skillart::all(),
+            "skillcodings" => Skillcoding::all()
         ]);
     }
     public function commission()

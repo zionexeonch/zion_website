@@ -31,7 +31,7 @@
                 <div class="col">
                     <div class="card border-0" data-aos="zoom-in" data-aos-duration="1000">
                         <div class="card-body">
-                            <p class="p-family">Nyahoo🐾🐾... I'm Zion the cat man. I am an artist, programmer and
+                            <p class="p-family">Nyahoo🐾🐾... I'm Zion Exeon the cat man. I am an artist, programmer and
                                 content
                                 creator. I just graduated from vocational high school.</p>
                         </div>

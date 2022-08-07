@@ -22,13 +22,13 @@
     <section id="price">
         <div class="container">
             <article class="mt-4 mb-4 text-center">
-                <div id="judul">
+                <div id="judul" data-aos="fade-down" data-aos-duration="1000">
                     <h1>Price List</h1>
                 </div>
             </article>
             <div class="row justify-content-center row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
-                    <div class="card border-0">
+                    <div class="card border-0" data-aos="fade-up" data-aos-duration="1000">
                         <h3 class="fw-bold sub-title text-center">Art Commission</h3>
                         <div class="card-body">
                             <ul class="p-family fw-bold">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0">
+                    <div class="card border-0" data-aos="fade-up" data-aos-duration="1000">
                         <h3 class="fw-bold sub-title text-center">Web Program Aplication Commission</h3>
                         <div class="card-body">
                         </div>
@@ -64,13 +64,14 @@
     <section id="ddn" style="background-color: black">
         <div class="container">
             <article class="mb-4">
-                <div id="judul" class="text-white">
+                <div id="judul" class="text-white" data-aos="fade-down" data-aos-duration="1000">
                     <h1>Do & Do Not</h1>
                 </div>
             </article>
             <div class="row row-cols-1 row-cols-md-2 mb-3 g-4">
                 <div class="col">
-                    <div class="card border-0 text-white" style="background-color: black">
+                    <div class="card border-0 text-white" style="background-color: black" data-aos="fade-up"
+                        data-aos-duration="1000">
                         <h3 class="fw-bold sub-title text-center">Art Commission :</h3>
                         <div class="card-body">
                             <h4 class="fw-bold">Do :</h4>
@@ -96,7 +97,8 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 text-white" style="background-color: black">
+                    <div class="card border-0 text-white" style="background-color: black" data-aos="fade-up"
+                        data-aos-duration="1000">
                         <h3 class="fw-bold sub-title text-center">Web Program Aplication Commission :</h3>
                         <div class="card-body">
 
@@ -114,32 +116,35 @@
     <section id="example">
         <div class="container">
             <article class="mb-4">
-                <div id="judul" class="text-center">
+                <div id="judul" data-aos="fade-down" data-aos-duration="1000">
                     <h1>Example Projects</h1>
                 </div>
-                <h3 class="fw-bold sub-title mt-3">Art Commission :</h3>
+            </article>
+            <article>
+                <h3 class="fw-bold sub-title mt-3" data-aos="fade-right" data-aos-duration="1000">Art Commission :</h3>
             </article>
             <div class="row row-cols-1 row-cols-md-3 mb-3 g-4">
                 @foreach ($fanarts as $fanart )
                 <div class="col">
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in" data-aos-duration="1000">
                         <img src="/img/{{ $fanart->gambar }}" class="card-img-top" alt="">
                     </div>
                 </div>
                 @endforeach
             </div>
-            <div class="alert alert-danger" role="alert">
-                <span class="fs-6">Note : Itu gambar commission lama ku jadi jangan kaget kalau wm nya pake akun lama
-                    bukan akun yang sekarang aku pakai</span>
+            <div class="alert alert-danger" role="alert" data-aos="fade-up" data-aos-duration="1000">
+                <span class="fs-6">Note : That's a picture of my old commission so don't be surprised if the wm uses the
+                    old account, not the one I'm using now</span>
             </div>
             <article class="mb-3">
-                <h3 class="fw-bold sub-title">Web Program Application :</h3>
+                <h3 class="fw-bold sub-title" data-aos="fade-right" data-aos-duration="1000">Web Program Application :
+                </h3>
             </article>
             <div class="row row-cols-1 row-cols-md-3 mb-3 g-4">
                 @foreach ($gambars as $gambar )
                 <div class="col">
                     <a href="/commission/detail/{{ $gambar->id }}">
-                        <div class="card kartu-hasil text-white rounded">
+                        <div class="card kartu-hasil text-white rounded" data-aos="zoom-in" data-aos-duration="1000">
                             <img src="/img/{{ $gambar->picture }}" class="image rounded" alt="{{ $gambar->judul }}">
                             <div class="card-img-overlay">
                                 <h5 class="card-title">{{ $gambar->judul }}</h5>
@@ -160,13 +165,14 @@
     <section id="procedure" style="background-color: black">
         <div class="container">
             <article class="mb-4 text-center ">
-                <div id="judul" class="text-white">
+                <div id="judul" class="text-white" data-aos="fade-down" data-aos-duration="1000">
                     <h1>Procedure</h1>
                 </div>
             </article>
             <div class="row row-cols-1 row-cols-md-2 mb-3 g-4">
                 <div class="col">
-                    <div class="card border-0 text-white" style="background-color: black">
+                    <div class="card border-0 text-white" style="background-color: black" data-aos="fade-up"
+                        data-aos-duration="1000">
                         <h3 class="fw-bold sub-title text-center">Art Commission :</h3>
                         <div class="card-body">
                             <ul class="p-family fw-bold procedure-list">
@@ -188,10 +194,10 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 text-white" style="background-color: black">
+                    <div class="card border-0 text-white" style="background-color: black" data-aos="fade-up"
+                        data-aos-duration="1000">
                         <h3 class="fw-bold text-center sub-title ">Web Program Application :</h3>
                         <div class="card-body">
-
                         </div>
                     </div>
                 </div>
@@ -206,14 +212,14 @@
     <section id="payment">
         <div class="container">
             <article class="mb-4">
-                <div id="judul">
+                <div id="judul" data-aos="fade-down" data-aos-duration="1000">
                     <h1>Payment Via</h1>
                 </div>
             </article>
             <div class="row justify-content-center row-cols-1 row-cols-md-3 mb-3 g-4">
                 @foreach ($payments as $payment)
                 <div class="col">
-                    <div class="card border-0">
+                    <div class="card border-0" data-aos="zoom-in" data-aos-duration="1000">
                         <img src="/img/{{ $payment->gambar }}" class="card-img-top" alt="">
                     </div>
                 </div>
@@ -229,14 +235,14 @@
     <section id="contact" style="background-color: black">
         <div class="container">
             <article class="mb-4">
-                <div id="judul" class="text-white">
+                <div id="judul" class="text-white" data-aos="fade-down" data-aos-duration="1000">
                     <h1>Contact & Orders</h1>
                 </div>
             </article>
             <div class="row justify-content-center row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <a href="mailto:artzionsenpai@gmail.com" target="_blank" class="nav-link">
-                        <div class="card kartu-kontak mb-3">
+                        <div class="card kartu-kontak mb-3" data-aos="zoom-in" data-aos-duration="1000">
                             <div class="card-body text-center">
                                 <i class="fa-solid fa-envelope fa-5x pt-3 pb-3"></i>
                                 <h4 class="fw-bold">Email</h4>
@@ -246,8 +252,8 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="https://wa.me/6285875015516?text=Saya%20mau%20pesan" target="_blank" class="nav-link">
-                        <div class="card kartu-kontak mb-3">
+                    <a href="https://wa.me/6285875015516" target="_blank" class="nav-link">
+                        <div class="card kartu-kontak mb-3" data-aos="zoom-in" data-aos-duration="1000">
                             <div class="card-body text-center">
                                 <i class="fa-solid fa-phone fa-5x pt-3 pb-3"></i>
                                 <h4 class="fw-bold">Telepon / WA</h4>
@@ -258,7 +264,7 @@
                 </div>
                 <div class="col">
                     <a href="https://www.instagram.com/zionexeonch.2/" target="_blank" class="nav-link">
-                        <div class="card kartu-kontak mb-3">
+                        <div class="card kartu-kontak mb-3" data-aos="zoom-in" data-aos-duration="1000">
                             <div class="card-body text-center">
                                 <i class="fa-brands fa-instagram fa-5x pt-3 pb-3"></i>
                                 <h4 class="fw-bold">DM Instagram</h4>
@@ -278,27 +284,27 @@
     <section id="social">
         <div class="container">
             <article class="mb-3">
-                <div id="judul">
+                <div id="judul" data-aos="fade-down" data-aos-duration="1000">
                     <h1>Social Media</h1>
                 </div>
             </article>
             <div class="row justify-content-center text-center row-cols-1 row-cols-md-3  mb-3 g-4">
                 <div class="col">
-                    <div class="card border-0">
+                    <div class="card border-0" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
                         <a href="https://www.instagram.com/zionexeonch.2/" target="_blank" class="button">
                             <i class="fa-brands fa-instagram"></i> Instagram
                         </a>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0">
+                    <div class="card border-0" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
                         <a href="https://twitter.com/zionexeonch" target="_blank" class="button2">
                             <i class="fa-brands fa-twitter"></i> Twitter
                         </a>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0">
+                    <div class="card border-0" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
                         <a href="https://www.youtube.com/channel/UC4WSzheKlhmJKGGdwg3LnDw" target="_blank"
                             class="button3">
                             <i class="fa-brands fa-youtube"></i> Youtube
@@ -306,7 +312,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0">
+                    <div class="card border-0" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
                         <a href="https://wa.me/6285875015516" target="_blank" class="button4">
                             <i class="fa-brands fa-whatsapp"></i> Whatsapp
                         </a>
@@ -314,13 +320,13 @@
                 </div>
             </div>
             <article class="mb-3">
-                <div id="judul">
+                <div id="judul" data-aos="fade-up" data-aos-duration="1000">
                     <h1>Donation</h1>
                 </div>
             </article>
             <div class="row justify-content-center text-center row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                    <div class="card border-0">
+                    <div class="card border-0" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
                         <a href="https://trakteer.id/zionexeonch.2/tip" target="_blank" class="button5">Trakteer</a>
                     </div>
                 </div>

@@ -3,7 +3,7 @@
 <div class="container" style="margin-top: 3rem">
     <div class="row justify-content-center row-cols-1 row-cols-md-1 g-4">
         <div class="col">
-            <div class="card border-0 mb-3">
+            <div class="card border-0 mb-3" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="row g-0">
                     <div class="col-md-5">
                         <img src="/img/{{ $rincian->picture }}" class="img-fluid rounded-start"

@@ -42,7 +42,7 @@ class DatabaseSeeder extends Seeder
             "jenis" => "Aplikasi Web",
             "klien" => "CV. Mekar Cutting Digital",
             "apk" => "Aplikasi Web",
-            "link" => "Proses"
+            "link" => "https://bimahelm.akriliklasercutting.com/"
         ]);
         Image::create([
             "picture" => "softdev.png",
@@ -86,7 +86,7 @@ class DatabaseSeeder extends Seeder
             "gambar" => "photoshop.png"
         ]);
         Skillart::create([
-            "gambar" => "sai.png"
+            "gambar" => "csp.png"
         ]);
         Skillcoding::create([
             "gambar" => "html5.png"

@@ -23,13 +23,13 @@
     <section id="about">
         <div class="container">
             <article class="mt-4 mb-3">
-                <div id="judul">
+                <div id="judul" data-aos="fade-down" data-aos-duration="1000">
                     <h1>About Me</h1>
                 </div>
             </article>
-            <div class="row justify-content-center text-center row-cols-1 row-cols-md-2 mb-3 g-4">
+            <div class="row justify-content-center text-center row-cols-1 row-cols-md-2 mb-3">
                 <div class="col">
-                    <div class="card border-0">
+                    <div class="card border-0" data-aos="zoom-in" data-aos-duration="1000">
                         <div class="card-body">
                             <p class="p-family">Nyahoo🐾🐾... I'm Zion the cat man. I am an artist, programmer and
                                 content
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0">
+                    <div class="card border-0" data-aos="zoom-in" data-aos-duration="1000">
                         <div class="card-body">
                             <p class="p-family">I'm still 18 years old. My hobbies are drawing, playing games, reading
                                 manga,
@@ -48,31 +48,37 @@
                     </div>
                 </div>
             </div>
-            <article>
-                <div id="judul" class="mb-3">
+            <article class="mb-3">
+                <div id="judul" data-aos="fade-down" data-aos-duration="1000">
                     <h1>Skills</h1>
                 </div>
             </article>
-            <span class="mt-3 fs-2 fw-bold">Art Skills</h3>
-                <div class="row justify-content-center align-items-center text-center row-cols-1 row-cols-md-4 g-4">
-                    @foreach($skillarts as $skillart)
-                    <div class="col">
-                        <div class="card border-0">
-                            <img src="/img/art/{{ $skillart->gambar }}" class="card-img-top" alt="">
-                        </div>
+            <article class="mb-3">
+                <p class="fs-2 fw-bold" data-aos="fade-right" data-aos-duration="1000">Art
+                    Skills</p>
+            </article>
+            <div class="row justify-content-center row-cols-1 row-cols-md-4">
+                @foreach($skillarts as $skillart)
+                <div class="col">
+                    <div class="card border-0" data-aos="zoom-in" data-aos-duration="1000">
+                        <img src="/img/art/{{ $skillart->gambar }}" alt="">
                     </div>
-                    @endforeach
                 </div>
-                <span class="mb-3 fw-bold fs-2">Programming Skills</span>
-                <div class="row justify-content-center align-items-center text-center row-cols-1 row-cols-md-4 g-4">
-                    @foreach ($skillcodings as $skillcoding)
-                    <div class="col">
-                        <div class="card border-0">
-                            <img src="/img/code/{{ $skillcoding->gambar }}" class="card-img-top" alt="">
-                        </div>
+                @endforeach
+            </div>
+            <article class="mb-3">
+                <p class="fw-bold fs-2" data-aos="fade-right" data-aos-duration="1000">
+                    Programming Skills</p>
+            </article>
+            <div class="row justify-content-center row-cols-1 row-cols-md-4">
+                @foreach ($skillcodings as $skillcoding)
+                <div class="col">
+                    <div class="card border-0" data-aos="zoom-in" data-aos-duration="1000">
+                        <img src="/img/code/{{ $skillcoding->gambar }}" alt="">
                     </div>
-                    @endforeach
                 </div>
+                @endforeach
+            </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#000" fill-opacity="1"
@@ -82,33 +88,37 @@
     </section>
     <section id="portfolio" style="background-color: black">
         <div class="container">
-            <article class="mb-3 text-white">
-                <div id="judul" class="text-white  text-center">
+            <article class="mb-3">
+                <div id="judul" class="text-white" data-aos="fade-down" data-aos-duration="1000">
                     <h1>Work Result</h1>
                 </div>
-                <h3 class="mt-3">Art Commission :</h3>
+            </article>
+            <article class="mb-3 text-white">
+                <p class="mt-3 fs-2 fw-bold" data-aos="fade-right" data-aos-duration="1000">Art
+                    Commission :</p>
             </article>
             <div class="row row-cols-1 row-cols-md-3 mb-3 g-4">
                 @foreach ($fanarts as $fanart )
                 <div class="col">
-                    <div class="card border-0">
+                    <div class="card border-0" data-aos="zoom-in" data-aos-duration="1000">
                         <img src="/img/{{ $fanart->gambar }}" class="card-img-top" alt="">
                     </div>
                 </div>
                 @endforeach
             </div>
-            <div class="alert alert-danger" role="alert">
-                <span class="fs-6">Note : Itu gambar commission lama ku jadi jangan kaget kalau wm nya pake akun lama
-                    bukan akun yang sekarang aku pakai</span>
+            <div class="alert alert-danger" role="alert" data-aos="fade-up" data-aos-duration="1000">
+                <span class="fs-6">Note : That's a picture of my old commission so don't be surprised if the wm uses the
+                    old account, not the one I'm using now</span>
             </div>
-            <article class="mb-3 text-white">
-                <h3 class="mt-3">Web Program Application :</h3>
+            <article class="mb-3 mt-3 text-white">
+                <p class="fw-bold fs-2" data-aos="fade-right" data-aos-duration="1000">Web Program Application :</p>
             </article>
             <div class="row row-cols-1 row-cols-md-3 mb-3 g-4">
                 @foreach ($gambars as $gambar )
                 <div class="col">
                     <a href="/detail/{{ $gambar->id }}">
-                        <div class="card kartu-hasil text-white rounded border-0">
+                        <div class="card kartu-hasil text-white rounded border-0" data-aos="zoom-in"
+                            data-aos-duration="1000" data-aos-delay="500">
                             <img src="/img/{{ $gambar->picture }}" class="image rounded" alt="{{ $gambar->judul }}">
                             <div class="card-img-overlay">
                                 <h5 class="card-title">{{ $gambar->judul }}</h5>
@@ -128,28 +138,28 @@
     </section>
     <section id="social">
         <div class="container">
-            <article class="mb-3 text-center">
-                <div id="judul">
+            <article class="mb-3">
+                <div id="judul" data-aos="fade-down" data-aos-duration="1000">
                     <h1>Social Media</h1>
                 </div>
             </article>
-            <div class="row justify-content-center text-center row-cols-1 row-cols-md-3  mb-3 g-4">
+            <div class="row justify-content-center text-center row-cols-1 row-cols-md-3 mb-3 g-4">
                 <div class="col">
-                    <div class="card border-0">
+                    <div class="card border-0" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
                         <a href="https://www.instagram.com/zionexeonch.2/" target="_blank" class="button">
                             <i class="fa-brands fa-instagram"></i> Instagram
                         </a>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0">
+                    <div class="card border-0" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
                         <a href="https://twitter.com/zionexeonch" target="_blank" class="button2">
                             <i class="fa-brands fa-twitter"></i> Twitter
                         </a>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0">
+                    <div class="card border-0" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
                         <a href="https://www.youtube.com/channel/UC4WSzheKlhmJKGGdwg3LnDw" target="_blank"
                             class="button3">
                             <i class="fa-brands fa-youtube"></i> Youtube
@@ -157,21 +167,21 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0">
+                    <div class="card border-0" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
                         <a href="https://wa.me/6285875015516" target="_blank" class="button4">
                             <i class="fa-brands fa-whatsapp"></i> Whatsapp
                         </a>
                     </div>
                 </div>
             </div>
-            <article class="mb-3 text-center">
-                <div id="judul">
+            <article class="mb-3">
+                <div id="judul" data-aos="fade-up" data-aos-duration="1000">
                     <h1>Donation</h1>
                 </div>
             </article>
             <div class="row justify-content-center text-center row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                    <div class="card border-0">
+                    <div class="card border-0" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
                         <a href="https://trakteer.id/zionexeonch.2/tip" target="_blank" class="button5">Trakteer</a>
                     </div>
                 </div>

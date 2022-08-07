@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" type="text/css" href="/fontawesome/css/all.css">
   <link rel="stylesheet" href="/js/typing.js">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -20,7 +21,8 @@
   @yield("content")
   <footer>
     <div class="bg-footer text-white">
-      <div class="text-center p-5 fs-5">© 2022 Copyright: Zion Exeon Ch. &#127470</div>
+      <div class="text-center pb-3 fs-5">© 2022 Copyright: Zion Exeon Ch.</div>
+      <div class="fs-5 pb-5 text-center">Made with all my &#10084;</div>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
@@ -54,6 +56,10 @@
         function Redirect() {
           window.location = "#home";
         }
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
 </body>
 

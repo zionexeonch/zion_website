@@ -50,6 +50,9 @@
                     <div class="card border-0" data-aos="fade-up" data-aos-duration="1000">
                         <h3 class="fw-bold sub-title text-center">Web Program Aplication Commission</h3>
                         <div class="card-body">
+                            <div class="alert alert-warning" role="alert">
+                                <span class="fs-6 fw-bold">Coming Soon</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -101,7 +104,9 @@
                         data-aos-duration="1000">
                         <h3 class="fw-bold sub-title text-center">Web Program Aplication Commission :</h3>
                         <div class="card-body">
-
+                            <div class="alert alert-warning" role="alert">
+                                <span class="fs-6 fw-bold">Coming Soon</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -198,6 +203,9 @@
                         data-aos-duration="1000">
                         <h3 class="fw-bold text-center sub-title ">Web Program Application :</h3>
                         <div class="card-body">
+                            <div class="alert alert-warning" role="alert">
+                                <span class="fs-6 fw-bold">Coming Soon</span>
+                            </div>
                         </div>
                     </div>
                 </div>
